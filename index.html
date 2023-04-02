@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="shortcut icon" href="http://ead.ios.org.br/pluginfile.php/1/theme_moove/logo/1678486306/Ativo%203.png" type="image/x-icon">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EAD - Instituto da Oportunidade Social</title>
+</head>
+<body>
+
+<div class="login-main">
+
+<img src="http://ead.ios.org.br/pluginfile.php/1/theme_moove/logo/1678486306/Ativo%203.png" class="logo" alt="logo"><br>
+<p id="erro"> </p><br> 
+<form>
+<input placeholder="Identificação ou email" type="email"> 
+<br><br>
+<input placeholder="Senha" type="password">
+<br><br>
+<button type="button" onclick="passarValor()" class="btn">Acessar</button>
+</form>
+<br>
+<a class="perdeu" href="#">Perdeu a senha?</a>
+<p class="criar">Não possui uma conta?  <a href="#"> Criar uma conta</a></p>
+<br>
+<a class="cookies" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Aviso de Cookies</a>
+</div>
+
+
+</body>
+<script>
+function passarValor() {
+  var mensagem = "Nome de usuário ou senha errados. Por favor tente outra vez.";
+  var erro = document.getElementById("erro");
+  if (erro) {
+    erro.innerHTML = mensagem;
+  }
+}
+</script>
+</html>
